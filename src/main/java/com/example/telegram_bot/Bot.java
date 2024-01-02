@@ -61,9 +61,9 @@ public class Bot extends TelegramLongPollingBot {
         String response;
 
         //Сравниваем текст пользователя с нашими командами, на основе этого формируем ответ
-        if(textMsg.equals("/start") || textMsg.equals("/Start") || textMsg.equals("/strt"))
+        if(textMsg.equals("start") || textMsg.equals("Start") || textMsg.equals("strt"))
             response = "Приветствую! Этот бот знает много цитат. Жми 'просвяти' чтобы получить случайную из них";
-        else if(textMsg.equals("/get") || textMsg.equals("просвяти"))
+        else if(textMsg.equals("get") || textMsg.equals("просвяти"))
             response = storage.getRandQuote();
         else
             response = "чаво?";
