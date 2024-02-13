@@ -13,7 +13,7 @@ public class Storage {
     }
 
 
-     public String getRandQuote() //был без паблик
+     public String getRandQuote()   //был без паблик
     {
         //получаем случайное значение в интервале от 0 до самого большого индекса
         int randValue = (int)(Math.random() * quoteList.size());
