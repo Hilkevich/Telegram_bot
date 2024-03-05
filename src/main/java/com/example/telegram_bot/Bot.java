@@ -49,7 +49,7 @@ public class Bot extends TelegramLongPollingBot {
                 outMess.setText(response);
                 outMess.setReplyMarkup(replyKeyboardMarkup);
 
-                // Отправка в чат
+                //Отправка в чат
                 execute(outMess);
             }
         } catch (TelegramApiException e) {
