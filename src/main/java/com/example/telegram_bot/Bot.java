@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class Bot extends TelegramLongPollingBot {
     //создаем две константы, присваиваем им значения токена и имя бота соответсвтенно
-    //вместо звездочек подставляйте свои данные
     final private String BOT_TOKEN = "6585875849:AAH7CB3AQ733inDU5tyJl0mVcyV1WibmfAc";
     final private String BOT_NAME = "HelpJavaBot";
     Storage storage;
@@ -50,7 +49,7 @@ public class Bot extends TelegramLongPollingBot {
                 outMess.setText(response);
                 outMess.setReplyMarkup(replyKeyboardMarkup);
 
-                //Отправка в чат
+                // Отправка в чат
                 execute(outMess);
             }
         } catch (TelegramApiException e) {
